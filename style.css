@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative; 
+}
+.shoe{
+    /* background-c olor: red; */
+    background: linear-gradient(to right, rgb(175, 10, 175),pink,orange);
+    width: 85%;
+    height: 65%;
+    margin: auto;
+    margin-top: 5rem;
+    color: white;
+    padding: 2rem;
+    /* position: relative;  */
+}
+
+.des{
+    width: 40%;
+
+}
+.des h1{
+    font-size: xx-large;
+}
+
+.des p{
+    margin-top: 30px ;
+    font-size: larger ;
+}
+/* .shoe-img{
+    width: 580px;
+    height: 300px;
+    position: absolute;  
+    top: 0px;
+    right: 0px ;
+} */
+.shoe-img {
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 600px;
+    height: 300px;
+  }
+/* .container::after{
+    content: "Hi";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 229, 232);
+    transform: rotate(20deg);
+    z-index: -1;
+} */
+
+.container::after{
+    content: "hi";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    transform: rotate(11deg);
+    background: linear-gradient(to right, #b92d28, #1362bc);
+    z-index: -1;
+    box-shadow: 0px 0px 10px black ;
+    }
+
+    .shoe-img:hover{
+        width: 850px;
+        height: 580px;
+        top: 15px;
+        right: 0px;
+        
+      }
